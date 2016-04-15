@@ -1,0 +1,22 @@
+<Alloy>
+
+	<Window id="win" title="Detail">
+
+		<ActionBar platform="android" displayHomeAsUp="true" onHomeIconItemSelected="close" />
+		<Menu platform="android">
+			<MenuItem title="Delete" onClick="confirmToDeleteRide" />
+		</Menu>
+
+		<RightNavButton platform="ios">
+			<Button systemButton="TRASH" onClick="confirmToDeleteRide" />
+		</RightNavButton>
+
+		<ScrollView>
+
+      <Label>Some new content</Label>
+
+		</ScrollView>
+
+	</Window>
+
+</Alloy>

@@ -1,0 +1,25 @@
+{
+  "name": "ti-starter",
+  "version": "1.0.0",
+  "description": "Appcelerator Titanium Starter project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint lintFail.js"
+  },
+  "pre-commit": [
+    "eslint"
+  ],
+  "keywords": [
+    "Appcelerator",
+    "Titanium",
+    "Alloy"
+  ],
+  "author": "Dave Hudson",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^7.0.0",    
+    "pre-commit": "^1.1.2"
+  }
+}

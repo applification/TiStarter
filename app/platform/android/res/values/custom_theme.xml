@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="tistarter" parent="@style/Theme.AppCompat">
+		<item name="colorPrimary">#4e9cb5</item>
+		<item name="colorAccent">#FFFFFF</item>
+		<item name="android:statusBarColor">#256d84</item>
+		<item name="android:navigationBarColor">#256d84</item>
+	</style>
+</resources>

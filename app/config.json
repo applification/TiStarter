@@ -1,0 +1,22 @@
+{
+	"global": {
+    "colors": {
+      "brandLighter": "#B4D6F6",
+      "brandLight": "#0076E8",
+      "brand": "#4e9cb5",
+      "brandDark": "#004486",
+      "grayLight": "#E0E0E0",
+      "gray": "#858585",
+      "grayDarker": "#333"
+    }
+  },
+	"env:development": {},
+	"env:test": {},
+	"env:production": {},
+	"os:android": {},
+	"os:blackberry": {},
+	"os:ios": {},
+	"os:mobileweb": {},
+	"os:windows": {},
+	"dependencies": {}
+}

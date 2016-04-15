@@ -1,0 +1,7 @@
+<Alloy>
+	<Tab id="tab" icon="/images/tabIcon_settings.png" title="Tab 3">
+		<Window titleid="Tab 3">
+      <Label>Tab 3</Label>
+		</Window>
+	</Tab>
+</Alloy>

@@ -1,0 +1,18 @@
+"Window": {
+	backgroundColor: "#FFF"
+}
+
+"Window[platform=ios]": {
+
+	// Style the TabGroup"s navigation bar
+	barColor: Alloy.CFG.colors.brand,
+	navTintColor: "#FFF",
+	translucent: false,
+	titleAttributes: {
+		color: "#FFF"
+	}
+}
+
+"MenuItem[platform=android]": {
+	showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+}
