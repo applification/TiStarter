@@ -1,1 +1,1 @@
-$.index.open();
+$.index.open()
