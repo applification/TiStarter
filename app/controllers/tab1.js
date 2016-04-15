@@ -3,8 +3,7 @@ function openChild(win) {
   $.tab.open(win);
 }
 
-function openDetails(e) {
-
+function openDetails(e) { // eslint-disable-line no-unused-vars
   // We use a helper that we also pass on so that additional windows can be
   // opened under this tab without them needing to know of the context
   openChild(Alloy.createController('detail', {

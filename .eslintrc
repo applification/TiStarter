@@ -1,3 +1,34 @@
 {
-  "extends": "airbnb/legacy"
+  "extends": "airbnb/legacy",
+  "globals": {
+    "Ti": false,
+    "Titanium": false,
+    "Alloy": false,
+    "describe": false,
+    "it": false,
+    "before": false,
+    "beforeEach": false,
+    "after": false,
+    "afterEach": false,
+    "should": false,
+    "$": false,
+    "Backbone": false,
+    "OS_IOS": false,
+    "OS_ANDROID": false,
+    "_": false,
+    "ENV_DEV": false,
+    "ENV_TEST": false,
+    "ENV_PRODUCTION": false,
+    "DIST_ADHOC": false,
+    "DIST_STORE": false,
+    "L": false,
+    "alert": false,
+    "console": false,
+    "Widget": false,
+    "WPATH": false,
+    "APP": false
+  },
+  "rules": {
+      "no-alert": "off"
+  }
 }
