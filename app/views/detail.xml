@@ -1,6 +1,6 @@
 <Alloy>
 
-	<Window id="win" title="Detail">
+	<Window id="win" title="Detail" onAndroidback="close">
 
 		<ActionBar platform="android" displayHomeAsUp="true" onHomeIconItemSelected="close" />
 		<Menu platform="android">

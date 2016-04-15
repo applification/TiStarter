@@ -10,6 +10,7 @@ var context;
 var alloy;
 var controllerName = 'tab1.js'; // controller we are testing!
 var mobileTarget = process.env.MOBILETARGET; // passed in through NPM Scripts either iphone or android
+var CFG = require(path.join(appRoot.toString(), 'app', 'config.json'));
 
 /* ti-slag set up for iPhone */
 if (mobileTarget === 'iphone') {
@@ -21,7 +22,7 @@ if (mobileTarget === 'iphone') {
     underscore: path.join(appRoot.toString(), 'Resources', mobileTarget, 'alloy', 'underscore.js'),
     backbone: path.join(appRoot.toString(), 'Resources', mobileTarget, 'alloy', 'backbone.js'),
     constants: path.join(appRoot.toString(), 'Resources', mobileTarget, 'alloy', 'constants.js'),
-    CFG: path.join(appRoot.toString(), 'Resources', mobileTarget, 'alloy', 'CFG.js')
+    CFG: path.join(appRoot.toString(), 'Resources', 'alloy', 'CFG.js')
   });
 
   context = slag(path.join(appRoot.toString(), 'Resources', mobileTarget, 'alloy', 'controllers', controllerName), {
@@ -58,6 +59,20 @@ if (mobileTarget === 'android') {
 }
 
 /* TESTS */
+
+// iOS ONLY TEST
+if (mobileTarget === 'iphone') {
+  test('<Window> should have a barColor matching config.json global.colors.brand (' +CFG.global.colors.brand +')', function() {
+    context.Controller();
+    assert.strictEqual(context.win.barColor, CFG.global.colors.brand);
+  });
+
+  test('Should have a tab icon "/images/tabIcon_rides.png"', function() {
+    context.Controller();
+    assert.strictEqual(context.tab.icon, '/images/tabIcon_rides.png')
+  });
+}
+
 test('<Window> should have a layout of "composite"', function() {
   context.Controller();
   assert.strictEqual(context.win.layout, 'composite');
@@ -66,4 +81,24 @@ test('<Window> should have a layout of "composite"', function() {
 test('<Window> should have a background color of "white"', function() {
   context.Controller();
   assert.strictEqual(context.win.backgroundColor, '#FFF');
+});
+
+test('<Window> should have a title of "Tab One"', function() {
+  context.Controller();
+  assert.strictEqual(context.win.title, 'Tab One');
+});
+
+test('<Window> should have a wrapper <View> with a layout of "vertical"', function() {
+  context.Controller();
+  assert.strictEqual(context.wrapper.layout, 'vertical');
+});
+
+test('Should have a button with title "Open Details"', function() {
+  context.Controller();
+  assert.strictEqual(context.btnOpenDetails.title, "Open Details");
+});
+
+test('Should have a tab title of "Tab 1"', function() {
+  context.Controller();
+  assert.strictEqual(context.tab.title, "Tab 1");
 });

@@ -1,6 +1,24 @@
 
+var openAnimation;
+
+// HACK: ti-slag cannot handle R.anim so we wrap this in deployType and check for null
+if (Ti.App.deployType) {
+  openAnimation = {
+    activityEnterAnimation: Ti.App.Android.R.anim.slideinright,
+    activityExitAnimation: Ti.App.Android.R.anim.scaleout
+  };
+} else {
+  openAnimation = {};
+}
+
 function openChild(win) {
-  $.tab.open(win);
+  if (OS_IOS) {
+    $.tab.open(win);
+  }
+
+  if (OS_ANDROID) {
+    $.tab.open(win, openAnimation);
+  }
 }
 
 function openDetails(e) { // eslint-disable-line no-unused-vars

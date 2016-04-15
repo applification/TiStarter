@@ -1,6 +1,6 @@
 <Alloy>
 	<Tab id="tab" icon="/images/tabIcon_rides.png" title="Tab 1">
-		<Window id="win" titleid="Track" layout="composite">
+		<Window id="win" title="Tab One" layout="composite">
       <View id="wrapper" layout="vertical">
         <Label>Tab 1</Label>
         <Button id="btnOpenDetails" onClick="openDetails">Open Details</Button>
