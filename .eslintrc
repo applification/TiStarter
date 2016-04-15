@@ -29,6 +29,7 @@
     "APP": false
   },
   "rules": {
-      "no-alert": "off"
+      "no-alert": "off",
+      "max-len": ["error", {"code": 180, "tabWidth": 2, "ignoreUrls": true}]
   }
 }

@@ -4,22 +4,37 @@
   "description": "Appcelerator Titanium Starter project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "appc run -p ios -C? --liveview",
+    "test": "alloy compile --config platform=ios && MOBILETARGET=iphone ava \"app/**/*.test.js\" --serial --verbose",
+    "test:ios": "alloy compile --config platform=ios && MOBILETARGET=iphone ava \"app/**/*.test.js\" --serial --verbose",
+    "test:ios:watch": "alloy compile --config platform=ios && MOBILETARGET=iphone ava \"app/**/*.test.js\" --serial --verbose --watch",
+    "test:android": "alloy compile --config platform=android --logLevel 4 && MOBILETARGET=android ava \"app/**/*.test.js\" --serial --verbose",
+    "test:android:watch": "alloy compile --config platform=android && MOBILETARGET=android ava \"app/**/*.test.js\" --serial --verbose --watch",
+    "coverage": "nyc npm test && nyc report",
     "eslint": "eslint app"
   },
   "pre-commit": [
     "eslint"
   ],
   "keywords": [
-    "Appcelerator",
-    "Titanium",
-    "Alloy"
+    "appcelerator",
+    "titanium",
+    "alloy",
+    "cli",
+    "vm",
+    "ava",
+    "chai",
+    "ti-slag"
   ],
   "author": "Dave Hudson",
   "license": "ISC",
   "devDependencies": {
+    "app-root-path": "^1.0.0",
+    "ava": "^0.14.0",
+    "chai": "^3.5.0",
     "eslint": "^2.7.0",
     "eslint-config-airbnb": "^7.0.0",
-    "pre-commit": "^1.1.2"
+    "pre-commit": "^1.1.2",
+    "ti-slag": "0.0.25"
   }
 }
