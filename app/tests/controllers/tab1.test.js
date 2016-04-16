@@ -98,6 +98,11 @@ test('Should have a button with title "Open Details"', function() {
   assert.strictEqual(context.btnOpenDetails.title, "Open Details");
 });
 
+test('<Window> first child element should be a <View> with id "wrapper"', function() {
+  context.Controller();
+  context.win.children[0].id.should.equal('wrapper');
+});
+
 test('Should have a tab title of "Tab 1"', function() {
   context.Controller();
   assert.strictEqual(context.tab.title, "Tab 1");
