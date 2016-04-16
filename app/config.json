@@ -10,9 +10,15 @@
       "grayDarker": "#333"
     }
   },
-	"env:development": {},
-	"env:test": {},
-	"env:production": {},
+  "env:development": {
+    "run_unit_tests" : true
+  },
+	"env:test": {
+    "run_unit_tests" : true
+  },
+	"env:production": {
+    "run_unit_tests" : false
+  },
 	"os:android": {},
 	"os:blackberry": {},
 	"os:ios": {},
