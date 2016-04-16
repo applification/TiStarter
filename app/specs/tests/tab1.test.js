@@ -8,6 +8,7 @@ beforeEach(function() {
 
 describe('Tab 1', function() {
   it('should have a tab icon', function() {
+    // console.log('$: '+JSON.stringify($));
     should.exist($.icon);
   });
 
