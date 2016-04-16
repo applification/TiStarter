@@ -14,6 +14,11 @@
     <guid>6e526f77-1e79-49d7-9444-9a52e6b7235a</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
+      <!-- Minimum of iOS 8 so we don't need fallback Launch Images for older iPhones -->
+      <min-ios-ver>8.0</min-ios-ver>
+      <!-- Use the builtin Storyboard Launch File with DefaultIcon.png on a blue background -->
+      <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+      <default-background-color>#4e9cb5</default-background-color>
         <plist>
             <dict>
                 <key>UISupportedInterfaceOrientations~iphone</key>
