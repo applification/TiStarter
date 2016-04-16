@@ -1,4 +1,3 @@
-
 var openAnimation;
 
 // HACK: ti-slag cannot handle R.anim so we wrap this in deployType and check for null

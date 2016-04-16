@@ -1,7 +1,0 @@
-<Alloy>
-	<Tab id="tab" icon="/images/tabIcon_track.png" title="Tab 2">
-		<Window titleid="Tab 2">
-      <Label>Tab 2</Label>
-		</Window>
-	</Tab>
-</Alloy>

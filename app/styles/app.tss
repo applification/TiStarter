@@ -13,6 +13,50 @@
 	}
 }
 
+"#wrapper": {
+
+}
+
 "MenuItem[platform=android]": {
 	showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+}
+
+
+/* GLOBAL FONT STYLES */
+
+".h1": {
+  top:10,
+  color: Alloy.CFG.colors.brand,
+  font: {
+    fontSize: 20,
+    fontFamily: "SFCOMPACTTEXT-Heavy"
+  }
+}
+
+".h2": {
+  top:10,
+  color: Alloy.CFG.colors.brand,
+  font: {
+    fontSize: 18,
+    fontFamily: "SFCOMPACTTEXT-Heavy"
+  }
+}
+
+".p": {
+  top:10,
+  left: 10,
+  right: 10,
+  color: Alloy.CFG.colors.brand,
+  font: {
+    fontSize: 16,
+    fontFamily: "SFCOMPACTTEXT-Regular"
+  }
+}
+
+".btn": {
+  // tintColor: Alloy.CFG.colors.brand
+}
+
+".footer": {
+  height: 20
 }

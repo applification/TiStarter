@@ -1,0 +1,13 @@
+<Alloy>
+	<Tab id="tab" icon="/images/tabIcon_settings.png" title="Settings">
+		<Window titleid="Settings">
+      <ScrollView id="wrapper" layout="vertical">
+        <View id="uiControls">
+          <Switch id="basicSwitch" value="true" />
+          <Slider id="slider" top="50" min="0" max="100" value="50"/>
+        </View>
+        <Button>Edit App Permissions</Button>
+      </ScrollView>
+		</Window>
+	</Tab>
+</Alloy>

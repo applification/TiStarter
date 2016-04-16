@@ -1,0 +1,15 @@
+<Alloy>
+	<Tab id="tab" icon="/images/costume.png" title="Playground">
+		<Window id="win" title="Playground" layout="composite">
+      <ListView id="list">
+          <ListSection>
+              <ListItem title="Alert Dialog"></ListItem>
+              <ListItem title="Option Dialog"></ListItem>
+              <ListItem title="Picker"></ListItem>
+              <ListItem title="Date Picker"></ListItem>
+              <ListItem title="Text Input Fields"></ListItem>
+          </ListSection>
+      </ListView>
+		</Window>
+	</Tab>
+</Alloy>

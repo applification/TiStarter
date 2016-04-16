@@ -1,0 +1,14 @@
+"#uiControls": {
+  height: Ti.UI.SIZE
+}
+
+  "#basicSwitch": {
+    top: 10,
+    onTintColor: Alloy.CFG.colors.brand
+  }
+
+  "#slider": {
+    left: 10,
+    right: 10,
+    tintColor: Alloy.CFG.colors.brand
+  }
