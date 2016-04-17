@@ -4,7 +4,7 @@
   "description": "Appcelerator Titanium Starter project",
   "main": "index.js",
   "scripts": {
-    "start": "appc run -p ios -C? --liveview",
+    "start": "appc run -p ios -C?",
     "test": "alloy compile --config platform=ios && MOBILETARGET=iphone ava \"app/**/*.test.js\" --serial --verbose",
     "test:ios": "alloy compile --config platform=ios && MOBILETARGET=iphone ava \"app/**/*.test.js\" --serial --verbose",
     "test:ios:watch": "appc alloy compile --config platform=ios -D test && MOBILETARGET=iphone ava \"app/**/*.test.js\" --serial --verbose --watch",

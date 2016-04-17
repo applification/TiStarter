@@ -8,7 +8,7 @@ var appRoot = require('app-root-path');
 
 var context;
 var alloy;
-var controllerName = 'tab1.js'; // controller we are testing!
+var controllerName = 'playground.js'; // controller we are testing!
 var mobileTarget = process.env.MOBILETARGET; // passed in through NPM Scripts either iphone or android
 var CFG = require(path.join(appRoot.toString(), 'app', 'config.json'));
 
@@ -67,9 +67,9 @@ if (mobileTarget === 'iphone') {
     assert.strictEqual(context.win.barColor, CFG.global.colors.brand);
   });
 
-  test('Should have a tab icon "/images/tabIcon_rides.png"', function() {
+  test('Should have a tab icon "/images/costume.png"', function() {
     context.Controller();
-    assert.strictEqual(context.tab.icon, '/images/tabIcon_rides.png')
+    assert.strictEqual(context.tab.icon, '/images/costume.png')
   });
 }
 
@@ -83,27 +83,29 @@ test('<Window> should have a background color of "white"', function() {
   assert.strictEqual(context.win.backgroundColor, '#FFF');
 });
 
-test('<Window> should have a title of "Tab One"', function() {
+test('<Window> should have a title of "Playground"', function() {
   context.Controller();
-  assert.strictEqual(context.win.title, 'Tab One');
+  // console.log('Lang: ' + L('playground'));
+  assert.strictEqual(context.win.title, 'Playground');
 });
 
-test('<Window> should have a wrapper <View> with a layout of "vertical"', function() {
-  context.Controller();
-  assert.strictEqual(context.wrapper.layout, 'vertical');
-});
+// Now a ListView
+// test('<Window> should have a wrapper <View> with a layout of "vertical"', function() {
+//   context.Controller();
+//   assert.strictEqual(context.wrapper.layout, 'vertical');
+// });
 
-test('Should have a button with title "Open Details"', function() {
-  context.Controller();
-  assert.strictEqual(context.btnOpenDetails.title, "Open Details");
-});
-
-test('<Window> first child element should be a <View> with id "wrapper"', function() {
-  context.Controller();
-  context.win.children[0].id.should.equal('wrapper');
-});
-
-test('Should have a tab title of "Tab 1"', function() {
-  context.Controller();
-  assert.strictEqual(context.tab.title, "Tab 1");
-});
+// test('Should have a button with title "Open Details"', function() {
+//   context.Controller();
+//   assert.strictEqual(context.btnOpenDetails.title, "Open Details");
+// });
+//
+// test('<Window> first child element should be a <View> with id "wrapper"', function() {
+//   context.Controller();
+//   context.win.children[0].id.should.equal('wrapper');
+// });
+//
+// test('Should have a tab title of "Tab 1"', function() {
+//   context.Controller();
+//   assert.strictEqual(context.tab.title, "Tab 1");
+// });

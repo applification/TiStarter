@@ -1,6 +1,6 @@
 <Alloy>
 	<Tab id="tab" icon="/images/palette.png" title="Style Tile">
-		<Window titleid="Style Tile">
+		<Window id="win" title="Style Tile" layout="composite">
 
       <RightNavButton platform="ios">
   			<Button systemButton="INFO_LIGHT" />
@@ -12,7 +12,7 @@
         <Label class="p">Style Tiles are a design deliverable consisting of fonts, colors and interface elements that communicate the essence of a visual brand for a mobile app.</Label>
         <Label class="p">This app is a 'live' style tile to demonstrate a design within a mobile app, complete with interactions and animations so you can actually experience what your mobile app will feel like.</Label>
         <Label class="h2">Sub Title</Label>
-        <Button id="btnStyle" class="btn" onClick="openLoader">Open Acitivity Indicator</Button>
+        <Button id="btnStyle" class="btn" onClick="openLoader">Open Activity Indicator</Button>
         <View class="footer" />
       </ScrollView>
 		</Window>
