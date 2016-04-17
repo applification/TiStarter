@@ -4,12 +4,12 @@ var openAnimation;
 if (OS_ANDROID) {
   if (Alloy.CFG.run_unit_tests) {
     openAnimation = {};
+  } else {
+    openAnimation = {
+      activityEnterAnimation: Ti.App.Android.R.anim.slideinright,
+      activityExitAnimation: Ti.App.Android.R.anim.scaleout
+    };
   }
-} else {
-  openAnimation = {
-    activityEnterAnimation: Ti.App.Android.R.anim.slideinright,
-    activityExitAnimation: Ti.App.Android.R.anim.scaleout
-  };
 }
 
 function openChild(win) {

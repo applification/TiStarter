@@ -4,12 +4,12 @@ var closeAnimation;
 if (OS_ANDROID) {
   if (Alloy.CFG.run_unit_tests) {
     closeAnimation = {};
+  } else {
+    closeAnimation = {
+      activityEnterAnimation: Ti.App.Android.R.anim.scalein,
+      activityExitAnimation: Ti.App.Android.R.anim.slideoutright
+    };
   }
-} else {
-  closeAnimation = {
-    activityEnterAnimation: Ti.App.Android.R.anim.scalein,
-    activityExitAnimation: Ti.App.Android.R.anim.slideoutright
-  };
 }
 
 function confirmToDeleteRide() {  // eslint-disable-line no-unused-vars

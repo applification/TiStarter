@@ -2,14 +2,14 @@ var openAnimation;
 
 // HACK: ti-slag cannot handle R.anim so we wrap this in deployType and check for null
 if (OS_ANDROID) {
-  if (ENV_PRODUCTION) {
+  if (Alloy.CFG.run_unit_tests) {
+    openAnimation = {};
+  } else {
     openAnimation = {
       activityEnterAnimation: Ti.App.Android.R.anim.slideinright,
       activityExitAnimation: Ti.App.Android.R.anim.scaleout
     };
   }
-} else {
-  openAnimation = {};
 }
 
 function openChild(win) {

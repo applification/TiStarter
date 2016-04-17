@@ -1,5 +1,6 @@
 "Window": {
-	backgroundColor: "#FFF"
+	backgroundColor: "#FFF",
+  orientationModes: [Ti.UI.PORTRAIT]
 }
 
 "Window[platform=ios]": {
