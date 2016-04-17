@@ -5,5 +5,18 @@
 		<item name="colorAccent">#FFFFFF</item>
 		<item name="android:statusBarColor">#256d84</item>
 		<item name="android:navigationBarColor">#256d84</item>
+    <item name="colorPrimaryDark">#106565</item>
+    <item name="colorControlNormal">#ffffff</item>
+    <item name="colorControlActivated">#4e9cb5</item>
+    <item name="colorControlHighlight">#4e9cb5</item>
+    <item name="colorSwitchThumbNormal">#4e9cb5</item>
+    <item name="android:colorButtonNormal">#4e9cb5</item>
+    <item name="android:colorEdgeEffect">#106565</item>
+    <item name="android:textColorPrimary">#ffffff</item>
+    <item name="android:textAppearanceButton">@style/textAppearanceButton</item>
 	</style>
+
+  <style name="textAppearanceButton" parent="@android:style/TextAppearance.Material.Widget.Button">
+      <item name="android:textAllCaps">false</item>
+  </style>
 </resources>
