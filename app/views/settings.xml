@@ -3,7 +3,7 @@
 		<Window titleid="Settings">
       <ScrollView id="wrapper" layout="vertical">
         <View id="uiControls">
-          <Switch id="basicSwitch" value="true" />
+          <Switch id="basicSwitch" title="Tabs or Drawer" value="true" />
           <Slider id="slider" top="50" min="0" max="100" value="50"/>
         </View>
         <Button>Edit App Permissions</Button>

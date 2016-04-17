@@ -3,7 +3,7 @@
 }
 
   "#basicSwitch": {
-    top: 10,
+    top: 10,    
     onTintColor: Alloy.CFG.colors.brand
   }
 
