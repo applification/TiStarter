@@ -1,13 +1,13 @@
 <Alloy>
 	<Tab id="tab" icon="/images/costume.png" title="Playground">
 		<Window id="win" title="Playground" layout="composite">
-      <ListView id="list">
+      <ListView id="listview">
           <ListSection>
-              <ListItem title="Alert Dialog"></ListItem>
-              <ListItem title="Option Dialog"></ListItem>
-              <ListItem title="Picker"></ListItem>
-              <ListItem title="Date Picker"></ListItem>
-              <ListItem title="Text Input Fields"></ListItem>
+              <ListItem class="row" title="Alert Dialog"></ListItem>
+              <ListItem class="row" title="Option Dialog"></ListItem>
+              <ListItem class="row" title="Picker"></ListItem>
+              <ListItem class="row" title="Date Picker"></ListItem>
+              <ListItem class="row" title="Text Input Fields"></ListItem>
           </ListSection>
       </ListView>
 		</Window>

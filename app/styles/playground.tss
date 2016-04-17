@@ -1,4 +1,10 @@
-
-".container" : {
-  
+"#listview": {
+  separatorColor: Alloy.CFG.colors.brandLight
 }
+
+  ".row" : {
+    color: Alloy.CFG.colors.brand,
+    top: 10,
+    left: 10,
+    bottom: 10
+  }
