@@ -18,7 +18,7 @@ task("pre:compile", function(event, logger) {
 
 	    logger.info("*** Excluding tests from build");
 	    var path = (event.alloyConfig.platform == 'android') ? 'android' : 'iphone';
-	    var tests_dir = event.dir.resources + "/" + path + "/tests";
+	    var tests_dir = event.dir.resources + "/" + path + "/specs";
     	var wrench = require("wrench");
     	wrench.rmdirSyncRecursive(tests_dir);
 

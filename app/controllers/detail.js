@@ -2,14 +2,14 @@ var closeAnimation;
 
 // HACK: ti-slag cannot handle R.anim so we wrap this in deployType and check for null
 if (OS_ANDROID) {
-  if (ENV_PRODUCTION) {
-    closeAnimation = {
-      activityEnterAnimation: Ti.App.Android.R.anim.scalein,
-      activityExitAnimation: Ti.App.Android.R.anim.slideoutright
-    };
+  if (Alloy.CFG.run_unit_tests) {
+    closeAnimation = {};
   }
 } else {
-  closeAnimation = {};
+  closeAnimation = {
+    activityEnterAnimation: Ti.App.Android.R.anim.scalein,
+    activityExitAnimation: Ti.App.Android.R.anim.slideoutright
+  };
 }
 
 function confirmToDeleteRide() {  // eslint-disable-line no-unused-vars

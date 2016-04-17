@@ -11,10 +11,10 @@
     }
   },
   "env:development": {
-    "run_unit_tests" : true
+    "run_unit_tests" : false
   },
 	"env:test": {
-    "run_unit_tests" : true
+    "run_unit_tests" : false
   },
 	"env:production": {
     "run_unit_tests" : false
