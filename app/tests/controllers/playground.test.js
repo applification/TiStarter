@@ -89,11 +89,11 @@ test('<Window> should have a title of "Playground"', function() {
   assert.strictEqual(context.win.title, 'Playground');
 });
 
-// Now a ListView
-// test('<Window> should have a wrapper <View> with a layout of "vertical"', function() {
-//   context.Controller();
-//   assert.strictEqual(context.wrapper.layout, 'vertical');
-// });
+test('<Window> should have <ListView> as first child element with id "listview"', function() {
+  context.Controller();
+  assert.strictEqual(context.win.children[0].getApiName(), 'Ti.UI.ListView');
+  assert.strictEqual(context.win.children[0].id, 'listview');
+});
 
 // test('Should have a button with title "Open Details"', function() {
 //   context.Controller();

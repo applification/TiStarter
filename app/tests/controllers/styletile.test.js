@@ -107,3 +107,8 @@ test('Should have a tab title of "Style Tile"', function() {
   context.Controller();
   assert.strictEqual(context.tab.title, "Style Tile");
 });
+
+// test('fire event', function() {
+//   context.Controller();
+//   console.log(context.win.fireEvent('btnStyle', 'click'));
+// })

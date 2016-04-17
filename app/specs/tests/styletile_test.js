@@ -1,23 +1,23 @@
-var should = require('tests/should');
+var should = require('specs/should');
   var Alloy = require('alloy');
   var $;
 
 beforeEach(function() {
-  $ = Alloy.createController('tab1').getView();
+  $ = Alloy.createController('styletile').getView();
 })
 
-describe('Tab 1', function() {
+describe('Style Tile', function() {
   it('should have a tab icon', function() {
     // console.log('$: '+JSON.stringify($));
     should.exist($.icon);
   });
 
-  it('should have a tab title of "Tab 1"', function() {
-    $.title.should.match('Tab 1');
+  it('should have a tab title of "Style Tile"', function() {
+    $.title.should.match('Style Tile');
   });
 });
 
-describe('Tab 1 <Window>', function(){
+describe('Style Tile <Window>', function(){
   it('should have a layout of "composite"', function() {
     $.window.id.should.match('win');
   });
@@ -30,7 +30,10 @@ describe('Tab 1 <Window>', function(){
     $.window.backgroundColor.match('#FFF');
   });
 
-  it('should have <View> as first child element with id "wrapper"', function() {
-    $.window.children[0].id.should.equal('wrapper');
+  it('should have <ScrollView> as first child element with id "wrapper"', function() {
+    var tiAPI = $.window.children[0].getApiName();
+    var id = $.window.children[0].id;
+    tiAPI.should.equal('Ti.UI.ScrollView');
+    id.should.equal('wrapper');
   });
 });

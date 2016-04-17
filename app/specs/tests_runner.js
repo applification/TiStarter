@@ -1,6 +1,6 @@
 // mocha
 require('specs/ti-mocha');
-mocha.setup({reporter: 'ti-spec-studio'});
+mocha.setup({reporter: 'ti-spec'});
 
 // specs
 var require_path = 'specs/tests/';
@@ -11,8 +11,5 @@ for (var i=0; i<spec_files.length; i++) {
 }
 
 // run
-Ti.API.info("\n\n==============================\nRunning Unit Tests\n==============================\n\n");
 mocha.run(function(){
-	Ti.API.info("\n\n==============================\nCompleted Unit Tests\n==============================\n\n\n ");
-	Ti.App.fireEvent("logic_tests_complete");
 });
