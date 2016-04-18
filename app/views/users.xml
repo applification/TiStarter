@@ -1,0 +1,23 @@
+<Alloy>
+  <Collection src="randomuserme" />
+	<Tab id="tab" icon="/images/palette.png" title="Style Tile">
+    <Window id="winListView" title="ListView Model Binding" onOpen="init">
+  		<Widget id="ptr" src="nl.fokkezb.pullToRefresh" onRelease="myRefresher">
+  			<ListView onItemclick="rowClicked">
+  				<Templates>
+  					<ItemTemplate name="people">
+              <View layout="horizontal" height="50">
+  			          <Label bindID="id" visible="hidden" />
+                  <ImageView bindId="profilePic" defaultImage="/images/defaultImage.jpg" width="50"/>
+                  <Label bindId="txtFullName" left="70"/>
+              </View>
+            </ItemTemplate>
+  				</Templates>
+  				<ListSection dataCollection="randomuserme">
+  					<ListItem template="people" height="Ti.UI.SIZE" id:text="{id}" profilePic:image="{ProfileThumb}" txtFullName:text="{Firstname} {Lastname}" />
+  				</ListSection>
+  			</ListView>
+  		</Widget>
+    </Window>
+  </Tab>
+</Alloy>

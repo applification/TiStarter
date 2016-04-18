@@ -1,5 +1,5 @@
 {
-	"global": {
+  "global": {
     "colors": {
       "brandLighter": "#B4D6F6",
       "brandLight": "#0076E8",
@@ -11,18 +11,20 @@
     }
   },
   "env:development": {
-    "run_unit_tests" : false
+    "run_unit_tests": false
   },
-	"env:test": {
-    "run_unit_tests" : false
+  "env:test": {
+    "run_unit_tests": false
   },
-	"env:production": {
-    "run_unit_tests" : false
+  "env:production": {
+    "run_unit_tests": false
   },
-	"os:android": {},
-	"os:blackberry": {},
-	"os:ios": {},
-	"os:mobileweb": {},
-	"os:windows": {},
-	"dependencies": {}
+  "os:android": {},
+  "os:blackberry": {},
+  "os:ios": {},
+  "os:mobileweb": {},
+  "os:windows": {},
+  "dependencies": {
+    "nl.fokkezb.pullToRefresh": "*"
+  }
 }

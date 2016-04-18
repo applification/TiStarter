@@ -2,3 +2,5 @@ app/lib/icons.js
 app/tests/
 app/specs/
 alloy.jmk
+app/assets/alloy/sync/sqlrest.js
+app/widgets/nl.fokkezb.pullToRefresh/controllers/widget.js

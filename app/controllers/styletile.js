@@ -29,3 +29,7 @@ function openLoader(e) { // eslint-disable-line no-unused-vars
     args: 'some new args'
   }).getView());
 }
+
+function showInfo() { // eslint-disable-line no-unused-vars
+  alert('.h1 = "SF Compact Text Heavy 20dp"\n .h2 = "SF Compact Text Heavy 18dp"');
+}

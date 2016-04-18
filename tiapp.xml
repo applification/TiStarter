@@ -75,8 +75,9 @@
         <theme>default</theme>
     </mobileweb>
     <modules>
-        <module platform="commonjs">ti.cloud</module>
-    </modules>
+    <module platform="commonjs">ti.cloud</module>
+    <module platform="android">com.rkam.swiperefreshlayout</module>
+  </modules>
     <deployment-targets>
         <target device="android">true</target>
         <target device="ipad">true</target>

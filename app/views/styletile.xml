@@ -3,7 +3,7 @@
 		<Window id="win" title="Style Tile" layout="composite">
 
       <RightNavButton platform="ios">
-  			<Button systemButton="INFO_LIGHT" />
+  			<Button id="btnInfo" systemButton="INFO_LIGHT" onClick="showInfo" />
   		</RightNavButton>
 
       <ScrollView id="wrapper" layout="vertical">

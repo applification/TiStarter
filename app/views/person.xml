@@ -1,0 +1,14 @@
+<Alloy>
+	<Collection src="randomuserme" />
+	<Window id="winPerson" onOpen="init" backButtonTitle="back">
+		<ScrollView class="container">
+			<View layout="vertical">
+				<Label id="title" />
+				<Label id="fullName" />
+				<Label id="email" />
+				<Label id="password" />
+				<ImageView id="profilephoto" />
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

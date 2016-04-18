@@ -1,7 +1,7 @@
 <Alloy>
 	<TabGroup>
 		<Require src="styletile" />
-		<Require src="playground" />
+		<Require src="users" />
 		<Require src="settings" />
 	</TabGroup>
 </Alloy>
