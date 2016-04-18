@@ -29,6 +29,7 @@
   "author": "Dave Hudson",
   "license": "ISC",
   "devDependencies": {
+    "alloy": "^1.8.5",
     "app-root-path": "^1.0.0",
     "ava": "^0.14.0",
     "chai": "^3.5.0",
@@ -36,6 +37,7 @@
     "eslint-config-airbnb": "^7.0.0",
     "pre-commit": "^1.1.2",
     "ti-slag": "0.0.25",
-    "ticons": "*"
+    "ticons": "*",
+    "titanium": "^5.0.7"
   }
 }
