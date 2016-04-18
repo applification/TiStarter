@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "appc run -p ios -C? --liveview",
-    "test": "alloy compile --config platform=ios && MOBILETARGET=iphone ava \"app/**/*.test.js\" --serial --verbose",
+    "test": "npm run eslint && alloy compile --config platform=ios && MOBILETARGET=iphone ava \"app/**/*.test.js\" --serial --verbose",
     "test:ios": "alloy compile --config platform=ios && MOBILETARGET=iphone ava \"app/**/*.test.js\" --serial --verbose",
     "test:ios:watch": "appc alloy compile --config platform=ios -D test && MOBILETARGET=iphone ava \"app/**/*.test.js\" --serial --verbose --watch",
     "test:android": "alloy compile --config platform=android --logLevel 4 && MOBILETARGET=android ava \"app/**/*.test.js\" --serial --verbose",
