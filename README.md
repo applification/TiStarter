@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/applification/TiStarter.svg?branch=master)](https://travis-ci.org/applification/TiStarter)
+
 # Ti Starter (Tabbed UI)
 
 > A starter project for Appcelerator Titanium that showcases best practice techniques and can be used to kick-start your Ti App
